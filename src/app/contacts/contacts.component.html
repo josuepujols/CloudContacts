@@ -1,0 +1,28 @@
+
+<div id="cotainer-contact">
+    <h2 class="head-style another-head">Contactos</h2>
+    <div id="search">
+        <input (input)="search_contact()" [(ngModel)]="text_search" [ngModelOptions]="{standalone: true}"  id="input-search" class="form-control" type="text" placeholder="Nombre de Contacto">
+        <div id="dos-botones">
+			<button (click)="search_contact()" id="boton_search" class="btn btn-success boton_search">Buscar</button>
+			<button (click)="clear_text()" (click)="show_contacts()" id="boton_all" class="btn btn-primary boton_search">Todos</button>
+		</div>
+    </div>
+
+	<div id="card-container">
+		<div *ngFor="let dato of this.listado_contactos; let i = index;" class="card mt-5" style="width: 18rem;">
+			<img class="image card-img-top img-fluid" src="../../assets//contact-icon-png-1.png" alt="Card image cap">
+			<div class="card-body">
+			  <h5 class="card-title"><strong>Nombre:</strong> {{dato.nombre}}</h5>
+			  <h5 class="card-title"><strong>Apellido:</strong> {{dato.apellido}}</h5>
+			  <h5 class="card-title"><strong>Telefono:</strong> {{dato.telefono}}</h5>
+			  <h5 class="card-title"><strong>Correo:</strong> {{dato.email}}</h5>
+			  <div id="botones">
+				<button (click)="update_contact(dato)" class="edit interactuar btn btn-primary editar">Editar</button>
+				<button (click)="delete_contact(dato, i)" class="delete interactuar btn btn-danger borrar">Borrar</button>
+			  </div>
+			</div>
+		</div>
+	</div>
+	
+</div>

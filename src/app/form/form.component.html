@@ -1,0 +1,31 @@
+
+<h1 id="title">CloudContacts</h1>
+
+<div id="container-form">
+    <h2 class="head-style">Agregar Contacto</h2>
+    <hr id="barra"/>
+
+    <form #formContact>
+        <div class="form-group">
+          <input (enter)="contacto.reload_page()" [(ngModel)]="data_service.nombre" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="name" placeholder="Nombre del contacto">
+        </div>
+
+        <div class="form-group">
+            <input (enter)="contacto.reload_page()" [(ngModel)]="data_service.apellido" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="last-name" placeholder="Apellido del contacto">
+        </div>
+
+        <div class="form-group">
+            <input (enter)="contacto.reload_page()" [(ngModel)]="data_service.telefono" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="number" placeholder="Telefono del contacto">
+        </div>
+
+        <div class="form-group">
+            <input (enter)="contacto.reload_page()" [(ngModel)]="data_service.email" [ngModelOptions]="{standalone: true}" type="email" class="form-control" id="email" placeholder="Correo del contacto">
+        </div>
+
+        <div class="bt form-group">
+            <button (click)="contacto.reload_page()" (click)="add_contact(formContact)" id="boton-form" class="btn btn-primary boton-form">Agregar</button>
+            <button disabled (click)="update_contact(data_service.id)" (click)="contacto.reload_page()" id="boton-update" class="btn btn-danger boton-form">Actualizar</button>
+            <app-contacts style="display: none;" #contacto></app-contacts>
+        </div>
+    </form>
+</div>

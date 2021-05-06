@@ -1,0 +1,154 @@
+
+/*Estilos generales*/
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url('./simple-pattern-with-css3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/*Estilos para el formulario*/
+
+#container {
+    width: 100%;
+}
+
+#title {
+    font-family: 'Zen Dots', cursive;
+    font-size: 42px;
+    margin-left: 7%;
+    margin-top: 4%;
+    color: #8bcfdd;
+}
+
+#container-form {
+    display: block;
+    float: left;
+    margin-left: 4%;
+    margin-top: 3%;
+    width: 35%;
+    height: 480px;
+    background-color: aliceblue;
+    border-radius: 25px;
+}
+
+.head-style {
+    font-family: 'Zen Dots';
+    font-size: 28px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#input-search {
+    width: 60% !important;
+    margin-left: 10% !important;
+}
+
+.boton_search {
+    width: 75px;
+    display: block;
+    float: right !important;
+    margin-top: -67px;
+    margin-right: 16%;
+    padding: 10px;
+    
+}
+
+#boton_all {
+    margin-right: 30px;
+}
+
+
+#container-form #barra {
+    display: block;
+    margin: 0px auto;
+    background-color: #343a40;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    width: 80% !important;
+    margin: 18px auto;
+    padding: 12px !important;
+}
+
+.bt {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.boton-form {
+    display: block;
+    width: 30% !important;
+    margin-top: 15px;
+    margin-bottom: 30px !important;
+    padding: 11px;
+}
+
+#boton-update {
+    margin-left: 20px;
+}
+
+
+/*Estilos para la seccion de contactos*/
+#cotainer-contact {
+    display: block;
+    float: left;
+    width: 55%;
+    background-color: aliceblue;
+    margin-top: -100px;
+    margin-left: 3%;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+
+.image {
+    width: 35% !important;
+    margin: 20px auto;
+}
+
+
+.another-head {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+
+#botones {
+    display: flex;
+    justify-content: center;
+}
+
+.interactuar {
+    width: 40%;
+    margin: 5px;
+}
+
+#card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px;
+}
+
+.card-body {
+    margin: 10px;
+}
+
+
+.card-body h5 {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+

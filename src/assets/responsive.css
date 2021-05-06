@@ -1,0 +1,110 @@
+
+
+@media (max-width: 1294px) { 
+    #container-form {
+        display: block;
+        float: none;
+        margin: 0px auto;
+        width: 60%;
+    }
+
+    #cotainer-contact {
+        display: block;
+        float: none;
+        margin: 0px auto;
+        margin-top: 100px;
+        width: 75%;
+    }
+
+    #title {
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 90px !important;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 958px) {
+
+    #dos-botones {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 28px !important;
+
+    }
+
+    .boton_search {
+        margin-top: 25px !important;
+        width: 30%;
+        float: none !important;
+        padding: 10px;
+    }
+
+     #input-search {
+        width: 80% !important;
+    }
+}
+
+
+@media (max-width: 754px) { 
+
+    #container-form {
+        height: 520px;
+    }
+}
+
+@media(max-width: 515px) {
+    .boton-form {
+        width: 80% !important;
+        margin: 0px !important;
+    }
+
+    #boton-form {
+        margin-bottom: 12px !important;
+    }
+}
+
+
+@media (max-width: 438px) {
+    #title {
+        font-size: 30px;
+    }
+
+    .head-style {
+        font-size: 18px;
+    }
+
+
+    #botones {
+        display: flex;
+        width: 105%;
+        margin: 0px auto;
+    }
+
+    .interactuar {
+        width: 65%;
+        font-size: 12px;
+    }
+
+    #boton-form {
+        width: 100px !important;
+    }
+
+    .boton_search {
+        width: 100px !important;
+    }
+}
+
+@media (max-width: 306px) {
+    #title {
+        font-size: 20px;
+    }
+
+    .interactuar {
+        width: 50%;
+        font-size: 8px;
+    }
+}
+
